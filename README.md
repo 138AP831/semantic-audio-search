@@ -697,26 +697,9 @@ Potential extensions include:
 
 A scalable version could use:
 
-```
-User
-  |
-  v
-Frontend
-  |
-  v
-API
-  |
-  +------------------+
-  |                  |
-  v                  v
-CLAP             Vector DB
-  |                  |
-  +--------+---------+
-           |
-           v
-     Cloud Storage
-      Audio Files
-```
+<p align="center">
+  <img src="architecture-diagram.svg" alt="SoundFind production architecture: User to Frontend to API, fanning out to CLAP and Vector DB, converging into Cloud Storage and Audio Files" width="720">
+</p>
 
 The local prototype uses Streamlit and ChromaDB, while the same architecture can later be extended to cloud infrastructure.
 
